@@ -1,0 +1,231 @@
+[[package]]
+category = "main"
+description = "Classes Without Boilerplate"
+name = "attrs"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "19.3.0"
+
+[package.extras]
+azure-pipelines = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "pytest-azurepipelines"]
+dev = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "sphinx", "pre-commit"]
+docs = ["sphinx", "zope.interface"]
+tests = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
+
+[[package]]
+category = "main"
+description = "Low-level, data-driven core of boto 3."
+name = "botocore"
+optional = false
+python-versions = "*"
+version = "1.13.34"
+
+[package.dependencies]
+docutils = ">=0.10,<0.16"
+jmespath = ">=0.7.1,<1.0.0"
+
+[package.dependencies.python-dateutil]
+python = ">=2.7"
+version = ">=2.1,<2.8.1"
+
+[package.dependencies.urllib3]
+python = ">=3.4"
+version = ">=1.20,<1.26"
+
+[[package]]
+category = "main"
+description = "Microframework"
+name = "chalice"
+optional = false
+python-versions = "*"
+version = "1.12.0"
+
+[package.dependencies]
+attrs = ">=17.4.0,<20.0.0"
+botocore = ">=1.12.86,<2.0.0"
+click = ">=6.6,<8.0"
+enum-compat = ">=0.0.2"
+jmespath = ">=0.9.3,<1.0.0"
+pip = ">=9,<19.4"
+setuptools = "*"
+six = ">=1.10.0,<2.0.0"
+wheel = "*"
+
+[package.extras]
+event-file-poller = ["watchdog (0.8.3)"]
+
+[[package]]
+category = "main"
+description = "Composable command line interface toolkit"
+name = "click"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "7.0"
+
+[[package]]
+category = "main"
+description = "Docutils -- Python Documentation Utilities"
+name = "docutils"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "0.15.2"
+
+[[package]]
+category = "main"
+description = "enum/enum34 compatibility package"
+name = "enum-compat"
+optional = false
+python-versions = "*"
+version = "0.0.3"
+
+[[package]]
+category = "main"
+description = "JSON Matching Expressions"
+name = "jmespath"
+optional = false
+python-versions = "*"
+version = "0.9.4"
+
+[[package]]
+category = "main"
+description = "Python driver for MongoDB <http://www.mongodb.org>"
+name = "pymongo"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "3.9.0"
+
+[package.extras]
+encryption = ["pymongocrypt"]
+gssapi = ["pykerberos"]
+snappy = ["python-snappy"]
+srv = ["dnspython (>=1.16.0,<2.0.0)"]
+zstd = ["zstandard"]
+
+[[package]]
+category = "main"
+description = "Extensions to the standard Python datetime module"
+marker = "python_version >= \"2.7\""
+name = "python-dateutil"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "2.8.0"
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+version = "1.13.0"
+
+[[package]]
+category = "main"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+marker = "python_version >= \"3.4\""
+name = "urllib3"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
+version = "1.25.7"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+
+[[package]]
+category = "main"
+description = "A built-package format for Python."
+name = "wheel"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.33.6"
+
+[package.extras]
+test = ["pytest (>=3.0.0)", "pytest-cov"]
+
+[metadata]
+content-hash = "a77f94e29bc17eb05f61f791567b9121d1b30c7bfd8e138d8b8e3270a70554c8"
+python-versions = "^3.8"
+
+[metadata.files]
+attrs = [
+    {file = "attrs-19.3.0-py2.py3-none-any.whl", hash = "sha256:08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"},
+    {file = "attrs-19.3.0.tar.gz", hash = "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"},
+]
+botocore = [
+    {file = "botocore-1.13.34-py2.py3-none-any.whl", hash = "sha256:7350d9bcaec0ec3127f808bfb75fa0114b5b6b09a485b0dba66d739c3654521b"},
+    {file = "botocore-1.13.34.tar.gz", hash = "sha256:55c82a4eda277ae145691783c064b0d6600e60e80bd379ca07eaef1cfe34a148"},
+]
+chalice = [
+    {file = "chalice-1.12.0-py2.py3-none-any.whl", hash = "sha256:1a8d937a91564318d50d1247fa50fb386d1c003fe39bd3e89a92e79d1aef95ed"},
+    {file = "chalice-1.12.0.tar.gz", hash = "sha256:f8f929f26df77285a202fb93174400230f8912c5b9c1fb061c7836a78413e325"},
+]
+click = [
+    {file = "Click-7.0-py2.py3-none-any.whl", hash = "sha256:2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13"},
+    {file = "Click-7.0.tar.gz", hash = "sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"},
+]
+docutils = [
+    {file = "docutils-0.15.2-py2-none-any.whl", hash = "sha256:9e4d7ecfc600058e07ba661411a2b7de2fd0fafa17d1a7f7361cd47b1175c827"},
+    {file = "docutils-0.15.2-py3-none-any.whl", hash = "sha256:6c4f696463b79f1fb8ba0c594b63840ebd41f059e92b31957c46b74a4599b6d0"},
+    {file = "docutils-0.15.2.tar.gz", hash = "sha256:a2aeea129088da402665e92e0b25b04b073c04b2dce4ab65caaa38b7ce2e1a99"},
+]
+enum-compat = [
+    {file = "enum-compat-0.0.3.tar.gz", hash = "sha256:3677daabed56a6f724451d585662253d8fb4e5569845aafa8bb0da36b1a8751e"},
+    {file = "enum_compat-0.0.3-py3-none-any.whl", hash = "sha256:88091b617c7fc3bbbceae50db5958023c48dc40b50520005aa3bf27f8f7ea157"},
+]
+jmespath = [
+    {file = "jmespath-0.9.4-py2.py3-none-any.whl", hash = "sha256:3720a4b1bd659dd2eecad0666459b9788813e032b83e7ba58578e48254e0a0e6"},
+    {file = "jmespath-0.9.4.tar.gz", hash = "sha256:bde2aef6f44302dfb30320115b17d030798de8c4110e28d5cf6cf91a7a31074c"},
+]
+pymongo = [
+    {file = "pymongo-3.9.0-cp27-cp27m-macosx_10_14_intel.whl", hash = "sha256:a409a43c76da50881b70cc9ee70a1744f882848e8e93a68fb434254379777fa3"},
+    {file = "pymongo-3.9.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:56ec9358bbfe5ae3b25e785f8a14619d6799c855a44734c9098bb457174019bf"},
+    {file = "pymongo-3.9.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:86624c0205a403fb4fbfedef79c5b4ab27e21fd018fdb6a27cf03b3c32a9e2b9"},
+    {file = "pymongo-3.9.0-cp27-cp27m-win32.whl", hash = "sha256:cef61de3f0f4441ec40266ff2ab42e5c16eaba1dc1fc6e1036f274621c52adc1"},
+    {file = "pymongo-3.9.0-cp27-cp27m-win_amd64.whl", hash = "sha256:a090a819fe6fefadc2901d3911c07c76c0935ec5c790a50e9f3c3c47bacd5978"},
+    {file = "pymongo-3.9.0-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:09f8196e1cb081713aa3face08d1806dc0a5dd64cb9f67fefc568519253a7ff2"},
+    {file = "pymongo-3.9.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:a76475834a978058425b0163f1bad35a5f70e45929a543075633c3fc1df564c5"},
+    {file = "pymongo-3.9.0-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:f30d7b37804daf0bab1143abc71666c630d7e270f5c14c5a7c300a6699c21108"},
+    {file = "pymongo-3.9.0-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:8b0339809b12ea292d468524dd1777f1a9637d9bdc0353a9261b88f82537d606"},
+    {file = "pymongo-3.9.0-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:e28153b5d5ca33d4ba0c3bbc0e1ff161b9016e5e5f3f8ca10d6fa49106eb9e04"},
+    {file = "pymongo-3.9.0-cp34-cp34m-win32.whl", hash = "sha256:3653cea82d1e35edd0a2355150daf8a27ebf12cf55182d5ad1046bfa288f5140"},
+    {file = "pymongo-3.9.0-cp34-cp34m-win_amd64.whl", hash = "sha256:ad474e93525baa6c58d75d63a73143af24c9f93c8e26e8d382f32c4da637901a"},
+    {file = "pymongo-3.9.0-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:88ac09e1b197c3b4531e43054d49c022a3ea1281431b2f4980abafa35d2a5ce2"},
+    {file = "pymongo-3.9.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:1be549c0ce2ba8242c149156ae2064b12a5d4704448d49f630b4910606efd474"},
+    {file = "pymongo-3.9.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:cca4e1ab5ba0cd7877d3938167ee8ae9c2986cc0e10d3dcc3243d664d3a83fec"},
+    {file = "pymongo-3.9.0-cp35-cp35m-win32.whl", hash = "sha256:9b705daec636c560dd2d63935f428a6b3cddfe903fffc0f349e0e91007c893d6"},
+    {file = "pymongo-3.9.0-cp35-cp35m-win_amd64.whl", hash = "sha256:fa75c21c1d82f20cce62f6fc4a68c2b0f33572ab406df1b17cd77a947d0b2993"},
+    {file = "pymongo-3.9.0-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:4ff8f5e7c0a78983c1ee07894fff1b21c0e0ad3a122d9786cc3745fd60e4a2ce"},
+    {file = "pymongo-3.9.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:5dca250cbf1183c3e7b7b18c882c2b2199bfb20c74c4c68dbf11596808a296da"},
+    {file = "pymongo-3.9.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:a102b346f1921237eaa9a31ee89eda57ad3c3973d79be3a456d92524e7df8fec"},
+    {file = "pymongo-3.9.0-cp36-cp36m-win32.whl", hash = "sha256:1f9fe869e289210250cba4ea20fbd169905b1793e1cd2737f423e107061afa98"},
+    {file = "pymongo-3.9.0-cp36-cp36m-win_amd64.whl", hash = "sha256:f70f0133301cccf9bfd68fd20f67184ef991be578b646e78441106f9e27cc44d"},
+    {file = "pymongo-3.9.0-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:61101d1cc92881fac1f9ac7e99b033062f4c210178dc33193c8f5567feecb069"},
+    {file = "pymongo-3.9.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:a13363869f2f36291d6367069c65d51d7b8d1b2fb410266b0b6b1f3c90d6deb0"},
+    {file = "pymongo-3.9.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:56b29c638ab924716b48a3e94e3d7ac00b04acec1daa8190c36d61fc714c3629"},
+    {file = "pymongo-3.9.0-cp37-cp37m-win32.whl", hash = "sha256:b268c7fa03ac77a8662fab3b2ab0be4beecb82f60f4c24b584e69565691a107f"},
+    {file = "pymongo-3.9.0-cp37-cp37m-win_amd64.whl", hash = "sha256:93dbf7388f6bf9af48dbb32f265b75b3dbc743a7a2ce98e44c88c049c58d85d3"},
+    {file = "pymongo-3.9.0-py2.7-macosx-10.14-intel.egg", hash = "sha256:7b4aea184e4868ebd4f9f786ffee14a1121bda5436ad04f6bcbacfa2147f8386"},
+    {file = "pymongo-3.9.0-py2.7-win-amd64.egg", hash = "sha256:b67ec339b180acdbebcd03807ae4b1764a43e7069340fe860a60ac310b9d38be"},
+    {file = "pymongo-3.9.0-py2.7-win32.egg", hash = "sha256:5b59bbde4eb417f3f9379f7b1a9de3669894f2bae9de933a836e2bffea2bbfa1"},
+    {file = "pymongo-3.9.0.tar.gz", hash = "sha256:4249c6ba45587b959292a727532826c5032d59171f923f7f823788f413c2a5a3"},
+]
+python-dateutil = [
+    {file = "python-dateutil-2.8.0.tar.gz", hash = "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"},
+    {file = "python_dateutil-2.8.0-py2.py3-none-any.whl", hash = "sha256:7e6584c74aeed623791615e26efd690f29817a27c73085b78e4bad02493df2fb"},
+]
+six = [
+    {file = "six-1.13.0-py2.py3-none-any.whl", hash = "sha256:1f1b7d42e254082a9db6279deae68afb421ceba6158efa6131de7b3003ee93fd"},
+    {file = "six-1.13.0.tar.gz", hash = "sha256:30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"},
+]
+urllib3 = [
+    {file = "urllib3-1.25.7-py2.py3-none-any.whl", hash = "sha256:a8a318824cc77d1fd4b2bec2ded92646630d7fe8619497b142c84a9e6f5a7293"},
+    {file = "urllib3-1.25.7.tar.gz", hash = "sha256:f3c5fd51747d450d4dcf6f923c81f78f811aab8205fda64b0aba34a4e48b0745"},
+]
+wheel = [
+    {file = "wheel-0.33.6-py2.py3-none-any.whl", hash = "sha256:f4da1763d3becf2e2cd92a14a7c920f0f00eca30fdde9ea992c836685b9faf28"},
+    {file = "wheel-0.33.6.tar.gz", hash = "sha256:10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646"},
+]
