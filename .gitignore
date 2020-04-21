@@ -1,2 +1,2 @@
-.chalice/deployments/
-.chalice/venv/
+.chalice
+.idea

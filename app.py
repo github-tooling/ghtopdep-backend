@@ -15,7 +15,8 @@ mongo_db = mongo_con.ghtopdep
 mongo_col = mongo_db.my_TTL_collection
 try:
     ONE_WEEK = 604800
-    mongo_col.create_index("date", expireAfterSeconds=ONE_WEEK)
+    ONE_MONTH = 2629746
+    mongo_col.create_index("date", expireAfterSeconds=ONE_MONTH)
     mongo_col.create_index("url", unique=True)
 except OperationFailure:
     pass
